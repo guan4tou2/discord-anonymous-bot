@@ -31,7 +31,7 @@ def thread(func):
     t.setDaemon(True)
     t.start()
 
-start=tk.Button(text="Start",font="HACKED 50")
+start=tk.Button(text="Start",font="50")
 start.config(bg='#252526',fg='#CCCCCC')
 start.config(command=lambda : thread(start_bot))
 start.pack()

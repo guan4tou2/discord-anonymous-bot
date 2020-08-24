@@ -33,19 +33,19 @@ def thread(func):
     t.setDaemon(True)
     t.start()
 
-chlab=tk.Label(text='Channel ID',bg='#1E1E1E',fg='#CCCCCC',font="HACKED 20")
+chlab=tk.Label(text='Channel ID',bg='#1E1E1E',fg='#CCCCCC',font="20")
 chlab.place(x=10,y=10,height=30)
 
 chen=tk.Entry(bg='#CCCCCC')
 chen.place(x=110,y=10,height=30)
 
-tolab=tk.Label(text='Token',bg='#1E1E1E',fg='#CCCCCC',font="HACKED 20")
+tolab=tk.Label(text='Token',bg='#1E1E1E',fg='#CCCCCC',font="20")
 tolab.place(x=10,y=45,height=30)
 
 toen=tk.Entry(bg='#CCCCCC')
 toen.place(x=110,y=45,height=30)
 
-start=tk.Button(text="Start",font="HACKED 50")
+start=tk.Button(text="Start",font="50")
 start.config(bg='#252526',fg='#CCCCCC')
 start.config(command=lambda : thread(start_bot))
 start.place(anchor='center',x=135,y=150)

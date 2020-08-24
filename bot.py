@@ -14,6 +14,7 @@ win.config(bg='#1E1E1E')
 
 @bot.event 
 async def on_ready():
+    win.config(bg='#C3602C')
     print('---Bot is online---')
 
 @bot.command()
@@ -25,7 +26,6 @@ def start_bot():
     channel_id=chen.get()
     token=toen.get()
     if len(channel_id)==18 and len(token)>50:
-        win.config(bg='#C3602C')
         bot.run(token)
 
 def thread(func):
